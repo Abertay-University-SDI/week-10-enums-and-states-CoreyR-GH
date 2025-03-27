@@ -19,6 +19,9 @@ public:
 	void render();
 
 private:
+	sf::Font textFont;
+	sf::Text pauseText;
+
 	sf::CircleShape ball;
 	float ballSpeed;
 };
