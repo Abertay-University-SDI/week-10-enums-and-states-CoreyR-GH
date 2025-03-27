@@ -8,8 +8,8 @@
 #include <string>
 #include <iostream>
 
-
-class Level : public BaseLevel{
+class Level : public BaseLevel
+{
 public:
 	Level(sf::RenderWindow* hwnd, Input* in, GameState* gs, AudioManager* aud);
 	~Level();
@@ -19,5 +19,6 @@ public:
 	void render();
 
 private:
-	// Default variables for level class.
+	sf::CircleShape ball;
+	float ballSpeed;
 };
